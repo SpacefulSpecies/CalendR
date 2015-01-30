@@ -57,7 +57,7 @@ abstract class PeriodAbstract implements PeriodInterface
      */
     public function getBegin()
     {
-        return $this->begin;
+        return clone $this->begin;
     }
 
     /**
@@ -65,7 +65,7 @@ abstract class PeriodAbstract implements PeriodInterface
      */
     public function getEnd()
     {
-        return $this->end;
+        return clone $this->end;
     }
 
     /**
